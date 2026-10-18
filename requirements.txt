@@ -61,14 +61,14 @@ opencv-python==4.10.0.84
 opt-einsum==3.3.0
 optree==0.12.1
 packaging==24.1
-pandas==2.2.1
+pandas==2.2.3
 pillow==10.3.0
 propcache==0.5.2
 protobuf==4.25.3
 pyarrow==25.0.0
 Pygments==2.18.0
 pyparsing==3.1.2
-python-dateutil==2.9.0.post0
+python-3.12.8
 pytz==2024.1
 PyYAML==6.0.3
 regex==2026.7.19
