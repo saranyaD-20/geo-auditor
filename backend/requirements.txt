@@ -1,0 +1,6 @@
+Flask
+requests
+beautifulsoup4
+numpy
+pandas==2.2.3
+gunicorn
