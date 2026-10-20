@@ -1,0 +1,122 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b16" />
+  <title>GEO Auditor | AI Search Readiness</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-icon">G</span>
+      GEO<span class="brand-light">Auditor</span>
+    </a>
+    <span class="header-label">AI SEARCH READINESS</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">GENERATIVE ENGINE OPTIMIZATION</span>
+      <h1>Make your website <span>AI-ready.</span></h1>
+      <p>
+        Discover content gaps, inspect website signals, and get
+        evidence-based recommendations for improving AI search readiness.
+      </p>
+
+      <form id="auditForm" class="url-form">
+        <input
+          id="websiteUrl"
+          type="url"
+          placeholder="https://example.com"
+          aria-label="Website URL"
+          required
+        />
+        <button id="analyzeButton" type="submit">
+          Analyze Website <span>→</span>
+        </button>
+      </form>
+      <div id="message" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="results" class="dashboard" hidden>
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">AUDIT RESULTS</span>
+          <h2>Your website report</h2>
+          <a id="auditedUrl" class="audited-url" target="_blank"
+             rel="noopener noreferrer"></a>
+        </div>
+        <button id="exportBtn" class="secondary-btn" type="button">
+          Export JSON ↓
+        </button>
+      </div>
+
+      <article class="score-card">
+        <div>
+          <p class="muted">GEO Readiness Score</p>
+          <div class="score-number">
+            <span id="score">0</span><small>/100</small>
+          </div>
+          <p id="scoreLabel">Awaiting analysis</p>
+        </div>
+        <div id="scoreRing" class="score-ring" role="img"
+             aria-label="GEO readiness percentage">
+          <span id="scorePercent">0%</span>
+        </div>
+      </article>
+
+      <section class="section-block">
+        <h3>Readiness breakdown</h3>
+        <p class="muted">Scores are calculated from the checks below.</p>
+        <div id="categoryScores" class="category-grid"></div>
+      </section>
+
+      <div class="report-grid">
+        <article class="panel">
+          <h3>Content overview</h3>
+          <p class="field-label">Page title</p>
+          <p id="pageTitle">—</p>
+          <p class="field-label">Meta description</p>
+          <p id="pageDescription">—</p>
+          <p class="field-label">Word count</p>
+          <p id="wordCount">—</p>
+        </article>
+
+        <article class="panel">
+          <h3>Audit checks</h3>
+          <p class="muted">Select any check to inspect its evidence.</p>
+          <div id="auditChecks"></div>
+        </article>
+      </div>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div>
+            <h3>Recommended improvements</h3>
+            <p class="muted">Prioritized by impact and estimated effort.</p>
+          </div>
+        </div>
+        <div id="recommendations"></div>
+      </section>
+
+      <section class="panel">
+        <h3>Audit limitations</h3>
+        <div id="limitations"></div>
+      </section>
+      <p class="footer-note">
+        GEO Auditor evaluates observable page signals. It does not guarantee
+        inclusion or citation in AI-generated answers.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    GEO Auditor · Independent website analysis
+  </footer>
+
+  <script type="module" src="/scripts.js"></script>
+</body>
+</html>

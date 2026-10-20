@@ -4,3 +4,4 @@ beautifulsoup4
 numpy
 pandas==2.2.3
 gunicorn
+Pillow==12.1.1
