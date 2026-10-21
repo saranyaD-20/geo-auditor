@@ -1,0 +1,9 @@
+{
+  "name": "geo-auditor",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/functions": "^5.1.0",
+    "cheerio": "^1.1.2"
+  }
+}

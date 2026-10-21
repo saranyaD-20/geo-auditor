@@ -28,7 +28,11 @@ Backend
 - BeautifulSoup
 - Requests
 
-## Installation
+## Deployment
+
+On Netlify, the analyzer runs as a serverless function (`netlify/functions/analyze.mts`) served at `/api/analyze`, and the React frontend is built from `frontend/`. Run both locally with `netlify dev`.
+
+## Installation (legacy Flask backend)
 
 ### Backend
 
