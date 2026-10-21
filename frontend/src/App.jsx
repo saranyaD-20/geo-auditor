@@ -22,7 +22,7 @@ function App() {
     try {
 
       const response = await axios.post(
-        "http://127.0.0.1:5000/analyze",
+        "/api/analyze",
         {
           url: url
         }
@@ -36,7 +36,7 @@ function App() {
 
       console.log(err);
 
-      alert("Backend is not running!");
+      alert(err.response?.data?.error || "Unable to analyze this website. Please try again.");
 
     }
 
